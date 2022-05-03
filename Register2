@@ -15,7 +15,7 @@ cadastrarProduto(){
 	int ok;
 	char nome[10]={'0'};
 	system("cls");
-	printf("\nDigite o nome do produto ou aperte 0 para retornar: ");
+	printf("\nDigite o nome do produto \nOu aperte 0 para retornar: ");
 	fflush(stdin);
 	gets(produtos[sequencia].nome);
 	ok=strcmp(produtos[sequencia].nome,nome);
@@ -44,7 +44,7 @@ cadastrarProduto(){
 entradaEstoque(){
 	int codigo,x,entrada=0,achou=0;
 	system("cls");
-	printf("\nDigite o código do produto ou 0 para retornar: ");
+	printf("\nDigite o código do produto \nOu 0 para retornar: ");
 	scanf("%d",&codigo);
 	if(codigo!=0){
 		for(x=0;x<sequencia;x++){
@@ -94,7 +94,7 @@ ajusteCadastro(){
 	double valor;
 	char nome[50];
 	system("cls");
-	printf("\nDigite o código do produto ou 0 para retornar: ");
+	printf("\nDigite o código do produto \nOu 0 para retornar: ");
 	scanf("%d",&codigo);
 	if(codigo!=0){
 		for(x=0;x<sequencia;x++){
@@ -131,7 +131,7 @@ venda(){
 	do{
 		subtotal=0;
 		system("cls");
-		printf("\nDigite o código do produto ou 0 para retornar: ");
+		printf("\nDigite o código do produto \nOu 0 para retornar: ");
 		scanf("%d",&codigo);
 		if(codigo!=0){
 			for(x=0;x<sequencia;x++){
